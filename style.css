@@ -1,12 +1,11 @@
-﻿/* ===========================
-   RESET & BASE
-=========================== */
+﻿/* Reset default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base page styles */
 body {
     background: #0f0e1a;
     color: #fff;
@@ -14,9 +13,7 @@ body {
     min-height: 100vh;
 }
 
-/* ===========================
-   NAVIGATION
-=========================== */
+/* Navigation bar (top of page) */
 nav {
     display: flex;
     align-items: center;
@@ -28,18 +25,21 @@ nav {
     background: #0f0e1a;
 }
 
+/* Logo text in navbar */
 .nav-logo {
     font-size: 18px;
     font-weight: 600;
     color: #fff;
 }
 
+/* Container for nav links */
 .nav-links {
     display: flex;
     gap: 2rem;
     list-style: none;
 }
 
+/* Individual nav links */
 .nav-links a {
     color: #a09db8;
     text-decoration: none;
@@ -47,11 +47,13 @@ nav {
     transition: color 0.2s;
 }
 
+/* Active page + hover state */
 .nav-links a.active,
 .nav-links a:hover {
     color: #7c6ef5;
 }
 
+/* Theme toggle button (top right) */
 .nav-theme {
     background: none;
     border: none;
@@ -60,9 +62,7 @@ nav {
     font-size: 18px;
 }
 
-/* ===========================
-   SHARED BUTTONS
-=========================== */
+/* Main purple button */
 .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -83,6 +83,7 @@ nav {
     background: #7c6ef5;
 }
 
+/* Outline-style button */
 .btn-outline {
     display: inline-flex;
     align-items: center;
@@ -104,6 +105,7 @@ nav {
     color: #fff;
 }
 
+/* Icons inside buttons */
 .btn-primary svg,
 .btn-outline svg {
     width: 16px;
@@ -113,18 +115,14 @@ nav {
     stroke-width: 2;
 }
 
-/* ===========================
-   INDEX — HERO WRAPPER
-=========================== */
+/* Wraps hero + side elements */
 .hero-wrapper {
     position: relative;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* ===========================
-   INDEX — SOCIAL BAR
-=========================== */
+/* Vertical social links on the left */
 .social-bar {
     display: flex;
     flex-direction: column;
@@ -135,6 +133,7 @@ nav {
     transform: translateY(-50%);
 }
 
+/* Social link styling */
 .social-bar a {
     color: #5a5778;
     text-decoration: none;
@@ -145,6 +144,7 @@ nav {
     color: #7c6ef5;
 }
 
+/* SVG icons for social links */
 .social-icon {
     width: 20px;
     height: 20px;
@@ -154,9 +154,7 @@ nav {
     display: block;
 }
 
-/* ===========================
-   INDEX — HERO SECTION
-=========================== */
+/* Main hero layout */
 .hero {
     display: flex;
     align-items: center;
@@ -166,10 +164,12 @@ nav {
     gap: 4rem;
 }
 
+/* Left side text */
 .hero-text {
     flex: 1;
 }
 
+/* Small intro text */
 .hero-text h2 {
     font-size: 20px;
     font-weight: 400;
@@ -177,6 +177,7 @@ nav {
     margin-bottom: 0.1rem;
 }
 
+/* Big name/title */
 .hero-text h1 {
     font-size: clamp(48px, 6vw, 72px);
     font-weight: 700;
@@ -185,6 +186,7 @@ nav {
     margin-bottom: 1rem;
 }
 
+/* Job title */
 .role {
     font-size: 18px;
     font-weight: 500;
@@ -192,6 +194,7 @@ nav {
     margin-bottom: 1rem;
 }
 
+/* Description text */
 .hero-text p {
     font-size: 16px;
     color: #8e8ba8;
@@ -200,14 +203,16 @@ nav {
     margin-bottom: 2rem;
 }
 
-/* ===========================
-   INDEX — AVATAR BLOB
-=========================== */
+/* Right side (avatar container) */
 .hero-image-wrap {
     position: relative;
     flex-shrink: 0;
 }
+.hero-image-wrap h5 {
+    padding-left: 9vh;
+}
 
+/* Purple circle behind avatar */
 .hero-blob {
     width: 320px;
     height: 320px;
@@ -219,6 +224,7 @@ nav {
     overflow: hidden;
 }
 
+/* Placeholder avatar shape */
 .avatar-placeholder {
     width: 240px;
     height: 270px;
@@ -229,9 +235,7 @@ nav {
     justify-content: center;
 }
 
-/* ===========================
-   INDEX — SCROLL HINT
-=========================== */
+/* Scroll indicator at bottom */
 .scroll-hint {
     display: flex;
     align-items: center;
@@ -241,6 +245,7 @@ nav {
     padding: 0 3rem 2.5rem 5rem;
 }
 
+/* Mouse outline */
 .scroll-icon {
     width: 22px;
     height: 30px;
@@ -252,6 +257,7 @@ nav {
     padding-top: 5px;
 }
 
+/* Moving dot animation */
 .scroll-dot {
     width: 3px;
     height: 7px;
@@ -260,6 +266,7 @@ nav {
     animation: scrollDot 1.5s ease-in-out infinite;
 }
 
+/* Scroll animation */
 @keyframes scrollDot {
     0%, 100% {
         transform: translateY(0);
@@ -271,9 +278,9 @@ nav {
     }
 }
 
-/* ===========================
-   ABOUT — SECTION
-=========================== */
+
+
+/* About section layout */
 .about {
     max-width: 1100px;
     margin: 0 auto;
@@ -284,13 +291,12 @@ nav {
     min-height: calc(100vh - 64px);
 }
 
-/* ===========================
-   ABOUT — IMAGE
-=========================== */
+/* About image container */
 .about-image-wrap {
     flex-shrink: 0;
 }
 
+/* Blob shape behind avatar */
 .about-blob {
     width: 300px;
     height: 320px;
@@ -303,6 +309,7 @@ nav {
     overflow: hidden;
 }
 
+/* Avatar placeholder */
 .about-avatar {
     width: 200px;
     height: 230px;
@@ -313,13 +320,12 @@ nav {
     justify-content: center;
 }
 
-/* ===========================
-   ABOUT — TEXT
-=========================== */
+/* Right side text */
 .about-text {
     flex: 1;
 }
 
+/* Small section label (e.g. "About") */
 .section-tag {
     display: inline-block;
     font-size: 13px;
@@ -330,6 +336,7 @@ nav {
     margin-bottom: 0.6rem;
 }
 
+/* Section title */
 .about-text h2 {
     font-size: clamp(32px, 4vw, 48px);
     font-weight: 700;
@@ -342,6 +349,7 @@ nav {
     color: #7c6ef5;
 }
 
+/* Paragraph text */
 .about-text p {
     font-size: 15px;
     color: #8e8ba8;
@@ -349,9 +357,7 @@ nav {
     margin-bottom: 0.85rem;
 }
 
-/* ===========================
-   ABOUT — STATS
-=========================== */
+/* Stats row */
 .about-stats {
     display: flex;
     gap: 2.5rem;
@@ -361,6 +367,7 @@ nav {
     border-bottom: 1px solid #1e1c2e;
 }
 
+/* Big stat number */
 .stat-number {
     font-size: 38px;
     font-weight: 700;
@@ -368,15 +375,14 @@ nav {
     line-height: 1;
 }
 
+/* Small stat label */
 .stat-label {
     font-size: 13px;
     color: #6a6880;
     margin-top: 5px;
 }
 
-/* ===========================
-   ABOUT — INFO GRID
-=========================== */
+/* Info grid (name, email, etc.) */
 .about-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -390,6 +396,7 @@ nav {
     gap: 2px;
 }
 
+/* Label text (e.g. "Email") */
 .info-label {
     font-size: 12px;
     color: #5a5778;
@@ -397,28 +404,26 @@ nav {
     letter-spacing: 1px;
 }
 
+/* Value text */
 .info-value {
     font-size: 15px;
     color: #c5c2da;
     font-weight: 500;
 }
 
+/* Highlight for availability */
 .info-value.available {
     color: #4ade80;
 }
 
-/* ===========================
-   ABOUT — BUTTONS
-=========================== */
+/* Buttons under about section */
 .about-buttons {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
-/* ===========================
-   SKILLS — SECTION
-=========================== */
+/* Skills section layout */
 .skills {
     max-width: 1100px;
     margin: 0 auto;
@@ -426,15 +431,16 @@ nav {
     min-height: calc(100vh - 64px);
 }
 
+/* Skills header (title + subtitle) */
 .skills-header {
     text-align: center;
     margin-bottom: 4rem;
 }
 
+/* Skills title */
 .skills-header h2 {
     font-size: clamp(32px, 4vw, 48px);
     font-weight: 700;
-    color: #fff;
     margin: 0.5rem 0 1rem;
 }
 
@@ -442,6 +448,7 @@ nav {
     color: #7c6ef5;
 }
 
+/* Skills description text */
 .skills-header p {
     font-size: 15px;
     color: #8e8ba8;
@@ -450,9 +457,7 @@ nav {
     line-height: 1.7;
 }
 
-/* ===========================
-   SKILLS — CARDS GRID
-=========================== */
+/* Grid of skill cards */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -460,6 +465,7 @@ nav {
     margin-bottom: 4rem;
 }
 
+/* Individual skill card */
 .skill-card {
     background: #15132a;
     border: 1px solid #1e1c2e;
@@ -472,6 +478,7 @@ nav {
     border-color: #6c5ce7;
 }
 
+/* Icon box inside card */
 .skill-card-icon {
     width: 48px;
     height: 48px;
@@ -489,28 +496,28 @@ nav {
     height: 22px;
 }
 
+/* Card title */
 .skill-card h3 {
     font-size: 18px;
     font-weight: 600;
-    color: #fff;
     margin-bottom: 1.5rem;
 }
 
-/* ===========================
-   SKILLS — BARS
-=========================== */
+/* List of skills inside card */
 .skill-list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
+/* Single skill item */
 .skill-item {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
+/* Skill name + percentage */
 .skill-info {
     display: flex;
     justify-content: space-between;
@@ -518,6 +525,7 @@ nav {
     color: #a09db8;
 }
 
+/* Background of progress bar */
 .skill-bar {
     width: 100%;
     height: 6px;
@@ -526,19 +534,19 @@ nav {
     overflow: hidden;
 }
 
+/* Filled part of progress bar */
 .skill-fill {
     height: 100%;
     background: linear-gradient(90deg, #6c5ce7, #9b8df8);
     border-radius: 99px;
 }
 
-/* ===========================
-   SKILLS — TECH BADGES
-=========================== */
+/* Tech badges section */
 .tech-badges-wrap {
     text-align: center;
 }
 
+/* Badge container */
 .tech-badges {
     display: flex;
     flex-wrap: wrap;
@@ -547,6 +555,7 @@ nav {
     margin-top: 1rem;
 }
 
+/* Individual badge */
 .badge {
     background: #15132a;
     border: 1px solid #2a2745;
