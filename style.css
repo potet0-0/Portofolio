@@ -236,12 +236,12 @@ nav {
    Index - I USE ARCH BTW
 =========================== */
 
-.arch_btw{
+.arch_btw {
     position: relative;
     left: 90px;
 }
 
-.arch_btw img{
+.arch_btw img {
     position: relative;
     top: 10px;
     opacity: 75%;
@@ -742,4 +742,116 @@ nav {
     color: #5a5778;
     cursor: default;
     font-style: italic;
+}
+
+
+/* ===========================
+   CONTACT — SECTION
+=========================== */
+.contacts {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 6rem 3rem 6rem 5rem;
+    min-height: calc(100vh - 64px);
+}
+
+.contacts-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contacts-header h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    color: #fff;
+    margin: 0.5rem 0 1rem;
+}
+
+.contacts-header h2 span {
+    color: #7c6ef5;
+}
+
+.contacts-header p {
+    font-size: 15px;
+    color: #8e8ba8;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.contact-card {
+    background: #15132a;
+    border: 2px solid #1e1c2e;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.email-hero {
+    position: relative;
+    height: 180px;
+    background: #1a1830;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===========================
+   CONTACT — COPY INFO
+=========================== */
+.email-info {
+    padding: 1.25rem 1.5rem 1.5rem;
+    text-align: start;
+}
+
+.email-info h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.email-info p {
+    font-size: 14px;
+    color: #8e8ba8;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+/* ===========================
+   CONTACT — BUTTON
+=========================== */
+.email-button {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.email-copy {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+    background-color: #6c5ce7;
+    padding: 0.85rem 2rem;
+    border-radius: 10px;
+}
+
+.email-copy:active {
+    transform: scale(1.05);
+}
+
+.project-link:hover {
+    color: #9b8df8;
 }
