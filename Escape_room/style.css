@@ -1,0 +1,239 @@
+/* Page1 Html */
+body {
+    background-color: #000000;
+}
+
+body.homepage {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-image: url('Images/abdullahi_img.png'); /*sets background*/
+    background-size: contain;
+    background-position: 75% center;
+    background-repeat: no-repeat;
+}
+
+body h1 {
+    justify-content: flex-start;
+    color: #aa6868;
+    font-size: 4em;
+    font-family: Consolas;
+}
+
+.head button {
+    position: relative; /* makes positioning easier */
+    background-color: #777780;
+    padding: 2vh 3vh;
+    border-radius: 9px;
+    left: 200px;
+    cursor: pointer;
+    transition: ease-in 0.25s;
+}
+
+button:hover {
+    transform: scale(1.05); /* makes bigger when hovering */
+    background-color: #28284a;
+    border-radius: 10px;
+}
+
+/* Page2 Html */
+
+.body_2nd {
+    position: relative;
+    background-image: url('Images/Kim67.png');
+    background-repeat: no-repeat;   /* properties for background */
+    background-position: center;
+    background-size: 50%;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.door_page {
+    padding-left: 60vh; /*malkes space between doors */
+    padding-top: -5vh;
+    z-index: 1; /* sets position on z-axis */
+}
+
+.door_choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 0 60px;
+    pointer-events: none;
+}
+
+.door_choice a {
+    pointer-events: auto;
+    transition: transform 0.3s ease-in-out; /*animation when hovering*/
+}
+
+.door_choice a:hover {
+    transform: scale(1.1);
+}
+
+.door_choice img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Third page/diddy room */
+
+.body_3rd {
+    background-image: url('Images/bedroom.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.diddy_room img {
+    position: relative;
+    top: 35vh;
+    left: 75vh;
+}
+
+.diddy_room h1 {
+    position: relative;
+    left: 60vh;
+    top: 5vh;
+}
+
+.return_button a {
+    position: relative;
+    background-color: #d81313;
+    padding: 2vh 3vh;
+    border-radius: 9px;
+    left: 200px;
+    cursor: pointer;
+    transition: ease-in 0.25s;
+}
+
+.baby_oil {
+    position: relative;
+    z-index: -999;
+    left: 90vh;
+}
+
+/* JavaScrip code / Counters */
+
+.counter-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.counter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#countLabel { 
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Helvetica";
+    padding: 10px;
+    width: fit-content;
+}
+
+#btnContainer {
+    text-align: center;
+}
+
+.buttons {
+    position: relative;
+    padding: 5px 5px;
+    font-size: 1.2em;
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 5px;
+    border-color: #ed8585;
+    cursor: pointer;    /*changes cursor when hovering on it*/
+    transition: background-color 0.25s;
+}
+
+.buttons:hover {
+    background-color: hsl(0, 1%, 21%);
+}
+
+#countLabel2 {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Helvetica";
+    padding: 10px;
+    width: fit-content;
+}
+
+#btnContainer2 {
+    text-align: center;
+}
+
+.buttons2 {
+    padding: 5px 5px;
+    font-size: 1.2em;
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 5px;
+    border-color: #ed8585;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.buttons2:hover {
+    background-color: hsl(0, 1%, 21%);
+}
+
+#countLabel3 {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Helvetica";
+    padding: 10px;
+    width: fit-content;
+}
+
+#btnContainer3 {
+    text-align: center;
+}
+
+.buttons3 {
+    padding: 5px 5px;
+    font-size: 1.2em;
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 5px;
+    border-color: #ed8585;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.buttons3:hover {
+    background-color: hsl(0, 1%, 21%);
+}
+    
+.counter-group {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 20px; 
+}
+
+#btnContainer,
+#btnContainer2,
+#btnContainer3 {
+    display: flex;
+    gap: 10px; 
+}
