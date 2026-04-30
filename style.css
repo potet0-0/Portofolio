@@ -632,7 +632,7 @@ nav {
 
 .project-card:hover {
     border-color: #6c5ce7;
-    transform: translateY(-4px);
+    transform: translateY(-4px)
 }
 
 .project-wip {
